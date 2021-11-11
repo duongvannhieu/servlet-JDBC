@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<decorators default="/">
+    <excludes>
+        <pattern>/api*</pattern>
+    </excludes>
+
+    <decorator name="login" page="/decorators/login.jsp">
+        <pattern>/dang-nhap</pattern>
+    </decorator>
+
+    <decorator name="web" page="/decorators/index.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+    <decorator name="admin" page="/decorators/home.jsp">
+        <pattern>/admin*</pattern>
+    </decorator>
+</decorators>
